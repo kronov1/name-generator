@@ -8,11 +8,17 @@
 </head>
 <body>
     <div id="container">
-        <h1 class="title">Gerador de nome</h1>
-        <p id="nome">Clique no botão!</p>
-        <button onclick="gerarNome()">Gerar</button>
+        <h1 class="title">Gerador de nome<br> e email aleatório</h1>
+        <div class="nome-e-email">
+            <p id="nome">Clique no botão!</p>
+            <p id="email"></p> <!-- Novo parágrafo para o e-mail -->
+        </div>
+        <button onclick="gerarNome()" id="gerar-btn">Gerar</button>
     </div>
-
+    <div class="aviso-container">
+        <p class="aviso">Precisa de uma senha pro email?</p>
+        <a class="link-aviso" target="_blank" href="https://password-generator-theta-amber.vercel.app/"><button class="aviso-btn">Gerador De Senha</button></a>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
